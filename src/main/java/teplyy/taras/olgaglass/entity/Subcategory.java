@@ -26,7 +26,7 @@ public class Subcategory {
     @ManyToOne
     private Category category;
 
-    @OneToMany(mappedBy = "Subcategory")
-    private List<Product> products = new ArrayList<>();
+//    @OneToMany(mappedBy = "Subcategory")
+//    private List<Product> products = new ArrayList<>();
 
 }

@@ -36,9 +36,6 @@ public class User {
 
     private String password;
 
-    @OneToOne
-    private Cart cart;
-
     @OneToMany(mappedBy = "user")
     private List<Order> orders = new ArrayList<>();;
 

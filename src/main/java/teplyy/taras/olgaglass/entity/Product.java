@@ -40,8 +40,6 @@ public class Product {
     @ManyToOne
     private Subcategory subcategory;
 
-    @ManyToMany(mappedBy = "products")
-    private List<Cart> carts = new ArrayList<>();
 
     @ManyToMany(mappedBy = "products")
     private List<Order> orders = new ArrayList<>();
