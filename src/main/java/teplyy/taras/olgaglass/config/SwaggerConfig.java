@@ -18,7 +18,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("SpringBoot-Swagger-API")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("roman.pidkostelnyi.victoriaarmario.controller"))
+                .apis(RequestHandlerSelectors.basePackage("teplyy.taras.olgaglass.controller"))
                 .build()
                 .consumes(Sets.newHashSet(MediaType.APPLICATION_JSON_VALUE.toString()))
                 .produces(Sets.newHashSet(MediaType.APPLICATION_JSON_VALUE.toString()));

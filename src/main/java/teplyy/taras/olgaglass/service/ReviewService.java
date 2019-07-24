@@ -37,7 +37,7 @@ public class ReviewService {
     }
 
     public List<ReviewResponse> findAllToShowByProductId(Long productId) {
-        return reviewRepository.findAllByProductIdAndShowIsTrue(productId).stream().map(ReviewResponse::new).collect(Collectors.toList());
+        return reviewRepository.findAllByProductIdAndHiddenIsFalse(productId).stream().map(ReviewResponse::new).collect(Collectors.toList());
     }
 
     public void update(Long id, ReviewRequest request) {
